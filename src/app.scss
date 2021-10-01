@@ -1,0 +1,14 @@
+@use './global/variables.scss';
+
+.app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.app > *:nth-child(2) {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
